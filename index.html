@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />        
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <!-- Include jQuery file -->
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- Include jQuery Mobile file -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+        <script type="text/javascript" src="js/custom.js"></script>         
+        <title>Spell ur name</title>
+        
+    </head>
+    <body >
+        <!-- Home Page -->
+        <div data-role="page" id="main">
+            <div>
+                <h1>Spell ur name</h1>
+                <a href="#page2" data-role="button">Spell ur name</a> 
+                <a href="#page3" data-role="button">Saved list</a>               
+            </div>
+        </div>
+        <!-- End of Home Page -->
+
+        <!-- Spell Page -->
+        <div data-role="page" id="page2">
+            <div data-role="header">
+                <a href="#main" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+                <h1>Spell ur name</h1>               
+            </div>
+            <div data-role="content">  
+                <p id="helloworld"></p> 
+                <div data-role="fieldcontain">
+                    <label for="name">Enter the text:</label>
+                    <input type="text" name="name" id="name" value=""  />
+                </div> 
+                 <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                    <a href="#" data-role="button" id="submit">Submit</a>
+
+                    <a href="#" data-role="button" id="reset">Reset</a>
+                    <a href="#" data-role="button" id="save">Save</a>
+                </div>                       
+                <div class="inner">my name noun</div>
+                    
+            </div>
+        </div>
+        <!-- End of Spell Page -->
+        <!-- Saved list Page -->
+        <div data-role="page" id="page3">
+            <div data-role="header">
+                <a href="#main" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+                <h1>Spell ur name</h1>               
+            </div>
+            <div data-role="content">  
+                <div class="saved-data">
+                </div>
+                    <a href="#" data-role="button" id="clear">Clear</a>
+            </div>
+            
+        </div>
+        
+        
+        
+    </body>
+</html>
